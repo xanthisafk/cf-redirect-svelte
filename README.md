@@ -12,6 +12,10 @@ A powerful, self-hosted link shortener built with SvelteKit and Cloudflare D1.
 - **My Links**: Manage your personal links, edit destinations, or delete them.
 - **Cloudflare D1**: Runs entirely on the edge with Cloudflare Workers and D1 Database.
 
+## TODO 
+- Implement Max users
+- Implement Max links per user
+
 ## Technology Stack 🛠️
 
 - **Framework**: SvelteKit
@@ -35,8 +39,8 @@ Follow these steps to deploy your own instance of UFO Link Shortener.
 Clone the repository and install dependencies:
 
 ```bash
-git clone <your-repo-url>
-cd cf-redirect
+git clone https://github.com/xanthisafk/cf-redirect-svelte.git
+cd cf-redirect-svelte
 npm install
 ```
 
