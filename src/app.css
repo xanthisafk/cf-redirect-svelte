@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon-green: #39ff14;
+  --color-neon-green-dim: #2cc90e;
+  
+  /* Dark Mode Defaults (Space) */
+  --color-space-black: #0a0a0a;
+  --color-space-gray: #1a1a1a;
+  --color-star-white: #ffffff;
+  
+  --color-ufo-green: #39ff14;
+}
+
+@layer base {
+  :root {
+      /* Dynamic Variables for Theme */
+      --bg-primary: #0a0a0a;
+      --bg-secondary: #1a1a1a;
+      --text-primary: #ffffff;
+      --text-secondary: #9ca3af;
+      --border-color: #374151;
+  }
+
+  /* Light Mode Override */
+  .light {
+      --bg-primary: #f0fdf4; /* Very light green hint */
+      --bg-secondary: #ffffff;
+      --text-primary: #0a0a0a;
+      --text-secondary: #4b5563;
+      --border-color: #e5e7eb;
+      --color-neon-green: #16a34a; /* Darker green for readability on light */
+      --color-neon-green-dim: #15803d;
+  }
+
+  body {
+    @apply font-sans antialiased transition-colors duration-300;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+  }
+
+  /* Background Gradient */
+  body:not(.light) {
+     background-image: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #0a0a0a 100%);
+  }
+}
+
+@layer components {
+    .btn-primary {
+        @apply bg-neon-green text-black font-bold py-2 px-4 rounded hover:opacity-90 transition-all shadow-[0_0_10px_rgba(57,255,20,0.5)] cursor-pointer;
+    }
+    
+    .input-field {
+        background-color: var(--bg-secondary);
+        border-color: var(--border-color);
+        @apply border rounded px-3 py-2 focus:outline-none focus:border-neon-green focus:shadow-[0_0_5px_rgba(57,255,20,0.5)];
+        color: var(--text-primary);
+    }
+    
+    .card {
+        background-color: var(--bg-secondary);
+        border-color: var(--border-color);
+        @apply border rounded-lg p-6 shadow-lg;
+    }
+}

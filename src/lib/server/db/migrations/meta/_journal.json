@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1765277533366,
+      "tag": "0000_cool_lady_vermin",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1765278455750,
+      "tag": "0001_perpetual_wilson_fisk",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1765296098244,
+      "tag": "0002_next_genesis",
+      "breakpoints": true
+    }
+  ]
+}

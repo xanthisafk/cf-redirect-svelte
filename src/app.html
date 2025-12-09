@@ -1,11 +1,64 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		%sveltekit.head%
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
-	</body>
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="/favicon.svg">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Primary Meta Tags -->
+	<title>UFO | Abduct Your Links - Fast & Secure Shortener</title>
+	<meta name="title" content="UFO | Abduct Your Links - Fast & Secure Shortener" />
+	<meta name="description"
+		content="UFO is the fastest, most secure link management platform in the galaxy. Powered by Cloudflare for privacy and speed. Deploy your own or use our premium service." />
+	<meta name="keywords"
+		content="link shortener, url shortener, open source, cloudflare, privacy, secure link, branding, qr code generator, analytics" />
+	<meta name="author" content="Abhinav - Xanthis" />
+	<meta name="theme-color" content="#39ff14" />
+	<meta name="robots" content="index, follow" />
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://ufo.xanthis.xyz/" />
+	<meta property="og:title" content="UFO | Abduct Your Links - Fast & Secure Shortener" />
+	<meta property="og:description"
+		content="UFO is the fastest, most secure link management platform in the galaxy. Powered by Cloudflare for privacy and speed. Deploy your own or use our premium service." />
+	<meta property="og:image" content="https://ufo.xanthis.xyz/og-image.png" />
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://ufo.xanthis.xyz/" />
+	<meta property="twitter:title" content="UFO | Abduct Your Links - Fast & Secure Shortener" />
+	<meta property="twitter:description"
+		content="UFO is the fastest, most secure link management platform in the galaxy. Powered by Cloudflare for privacy and speed. Deploy your own or use our premium service." />
+	<meta property="twitter:image" content="https://ufo.xanthis.xyz/og-image.png" />
+
+	<!-- Structured Data -->
+	<script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "UFO Link Shortener",
+          "operatingSystem": "Cloudflare Workers",
+          "applicationCategory": "UtilitiesApplication",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "1024"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
+        }
+        </script>
+
+	%sveltekit.head%
+</head>
+
+<body data-sveltekit-preload-data="hover" class="bg-space-black text-white min-h-screen">
+	<div style="display: contents">%sveltekit.body%</div>
+</body>
+
 </html>

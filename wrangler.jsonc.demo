@@ -1,0 +1,36 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "cf-redirect",
+	"main": ".svelte-kit/cloudflare/_worker.js",
+	"compatibility_date": "2025-12-09",
+	"compatibility_flags": [
+		"nodejs_als",
+		"nodejs_compat"
+	],
+	"assets": {
+		"binding": "ASSETS",
+		"directory": ".svelte-kit/cloudflare"
+	},
+	"observability": {
+		"enabled": true
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "cf-redirect",
+			"database_id": "Your <database_id> goes here",
+			"migrations_dir": "src/lib/server/db/migrations"
+		}
+	],
+	"vars": {
+		"JWT_SECRET": "Your <JWT_SECRET> goes here",
+		"PROMO_MODE": "public",
+		"MAX_USERS": "2",
+		"MAX_LINKS_PER_USER": "2",
+		"TRACK_LOCATION": "true",
+		"TRACK_DEVICE": "true",
+		"TRACK_OS": "true",
+		"TRACK_BROWSER": "true",
+		"TRACK_REFERRER": "true"
+	}
+}
